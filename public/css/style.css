@@ -139,10 +139,17 @@ nav ul a {
 
 .row {
   width: 100%;
-  max-width: 940px;
+  max-width: 1040px;
   margin: 0 auto;
   position: relative;
   padding: 0 2%;
+}
+
+@media (min-width: 550px){
+.column, .columns {
+    margin-left: 2%;
+}
+
 }
 
 * {
@@ -302,6 +309,11 @@ p {
     font-size: 14px;
     background: #ececec;
     padding: 10px 14px;
+    min-height: 200px;
+}
+
+.four.columns {
+    margin-bottom: 70px;
 }
 
 

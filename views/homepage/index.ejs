@@ -22,22 +22,39 @@
 
     <div class="row content">
 
-<div class="row">
-        <ul id="all-shopping-boxes">
-          <% shopArr.forEach(function(shop) { %>
-            <div class="four columns">
-           <li>
-            <h2 class="logosize-main"> <img src="<%= shop.imagelink %>"> </h2>
-            <div class="established-date">  Since: <%= shop.establishedate %></div><br>
-            <div class="details">  <%= shop.details %></div><br>
-              Website: <%= shop.urlname %><br>
-                <%= shop.reviewid %><br>
-                  <button id="read-reviews"><a href="/shoppingsites/<%=shop.id%>">Read Reviews</a></button>
-           </li>
-           </div>
-         <% }) %>
-     </ul>
-</div>
+      <div class="row">
+              <ul id="all-shopping-boxes">
+
+                <% var counter = 0;
+                 shopArr.forEach(function(shop) {
+                 counter++
+                 console.log(counter)
+
+
+
+                     %>
+
+                  <div class="four columns">
+                 <li>
+                <h2 class="logosize-main"> <img src="<%= shop.imagelink %>"> </h2>
+                  <div class="established-date">  Since: <%= shop.establishedate %></div><br>
+                  <div class="details">  <%= shop.details %></div><br>
+                    Website: <%= shop.urlname %><br>
+                      <%= shop.reviewid %><br>
+                      <a href="/shoppingsites/<%=shop.id%>"> <button id="read-reviews">Read Reviews</button></a>
+                 </li>
+                 </div>
+                 <% if (counter % 3 === 0){ %>
+                   <div style="clear:both;"></div>
+
+              <%   }
+               }) %>
+
+
+
+
+           </ul>
+      </div>
 
   </body>
 

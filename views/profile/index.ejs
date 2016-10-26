@@ -55,7 +55,15 @@
 
 <div class="row">
         <ul id="all-shopping-boxes">
-          <% shopArr.forEach(function(shop) { %>
+
+          <% var counter = 0;
+           shopArr.forEach(function(shop) {
+           counter++
+           console.log(counter)
+
+
+
+               %>
 
             <div class="four columns">
            <li>
@@ -67,7 +75,13 @@
                 <a href="/shoppingsites/<%=shop.id%>"> <button id="read-reviews">Read Reviews</button></a>
            </li>
            </div>
-         <% }) %>
+           <% if (counter % 3 === 0){ %>
+             <div style="clear:both;"></div>
+
+        <%   }
+         }) %>
+
+
 
 
      </ul>
