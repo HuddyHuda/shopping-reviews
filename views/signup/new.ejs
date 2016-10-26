@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>
+
+ </title>
+</head>
+
+<body>
+
+<%- include ../partials/header-loggedout.ejs %>
+
+<%=message%>
+ <form action="/users/signup" method="post" class="signup-user">
+ <div>
+ <label>First Name:</label>
+ <input type="text" name="user[local][firstname]" />
+ </div>
+ <div>
+ <label>Last Name:</label>
+ <input type="text" name="user[local][lastname]" />
+ </div>
+ <div>
+ <label>Email:</label>
+ <input type="text" name="user[local][email]" />
+ </div>
+ <div>
+
+ <label>Username:</label>
+ <input type="text" name="user[local][username]" />
+ </div>
+ <div>
+ <label>Password:</label>
+ <input type="password" name="user[local][password]" />
+ </div>
+ <div>
+ <input type="submit" value="Sign up" class="signup-btn" />
+ </div>
+ </form>
+</body>
+
+
+
+</html>

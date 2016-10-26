@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>list of users</title>
+  </head>
+  <body>
+    <h1>List Of Users </h1>
+
+
+  <%= usersArr %>
+
+  <% usersArr.forEach(function(user) { %>
+    <li>
+    <%= user.local.firstname %><br>
+    <%= user.local.lastname %><br>
+        <%= user.local.username %><br>
+        <%= user.local.email %><br>
+        <%= user.local.password %>
+    </li>
+  <% }) %>
+  </body>
+</html>

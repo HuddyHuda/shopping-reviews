@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<% if (message.length > 0 ){ %>
+<h2> Flash Found. </h2>
+<div class="alert alert-danger">
+<%= message %>
+</div>
+<%  } %>
+
+<%- include ../partials/header-loggedout.ejs %>
+
+<div class="hero">
+
+    <h1><span>Start signing in!</span><br></h1>
+    <h5>And you can start reviewing on online shopping sites such as qoo10, amazon,<br/> ebay, zalora.. and many others!</h5>
+
+    <div class="mouse">
+        <span></span>
+    </div>
+
+</div>
+
+<div class="container">
+  <div class="twelve columns">
+
+<form action="/users/signin" method="post" class="login-user">
+
+<label>Email:</label>
+<div>
+<input type="text" name="user[local][email]" />
+</div>
+<div>
+<label>Password:</label>
+<input type="password" name="user[local][password]" />
+</div>
+<div>
+<input type="submit" value="Log In" class="signin-btn" />
+</div>
+</form>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,490 @@
+body{
+  background-color:Green;
+}
+
+
+.main_h {
+  position: relative;
+  top: 0px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 1;
+  top: 0px;
+  padding-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 5px solid black;
+}
+
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.logo {
+  max-width: 300px;
+  font-size: 25px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.row {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#all-shopping-boxes {
+    margin-top: 20px;
+}
+
+body {
+  color: #8f8f8f;
+  background: white;
+  background-image:url(../images/grey-bg.png);
+  font-family: "Cardo", serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.content {
+  padding: 50px 2% 250px;
+}
+
+.hero {
+  position: relative;
+  background: url(http://www.opera.com/blogs/india/wp-content/uploads/sites/8/2015/10/Online-shopping.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+  min-height: 500px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#all-reviews-boxes {
+    max-width: 764px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+
+.hero h1 span {
+  font-size: 25px;
+  color: orange;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 12px;
+  line-height: 3;
+  background: rgba(0,0,0,0.5);
+  padding:10px 5px;
+}
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 2px solid orange;
+  position: absolute;
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -26px;
+}
+
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #e8f380;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+}
+
+#all-shopping-boxes h2 {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    color: orange;
+}
+
+#all-shopping-boxes{
+  list-style-type:none;
+}
+
+.details {
+    font-size: 14px;
+    background: #ececec;
+    padding: 10px 14px;
+}
+
+
+button#read-reviews {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: auto;
+  border-radius: 40px;
+  background: orange;
+  border: 2px solid orange;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+button#read-reviews:hover {
+  color: orange;
+  background: #fff;
+}
+button#read-reviews:active {
+  letter-spacing: 2px;
+}
+
+h2.reviews-by {
+    font-size: 14px !important;
+    color: black;
+    letter-spacing: -0.2px;
+}
+
+p.comments {
+    margin-bottom: 0px;
+    line-height: 19px;
+    font-size: 15px;
+    font-style: italic;
+    color: orange;
+}
+
+#all-reviews-boxes h2 {
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+.review-form h1 {
+    text-transform: none;
+    font-style: italic;
+}
+
+.twelve.columns.commentresponses {
+    border-bottom: 1px dotted #ccc;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.twelve.columns.commentresponses:nth-child(odd) {
+    background: #ececec;
+}
+
+.editbutton, .deletebutton {
+    float: right;
+    font-size: 13px;
+    margin-right:5px;
+    padding: 0;
+    background-color: #3498db;
+    background-image: -webkit-linear-gradient(#4aa3df 0%, #258cd1 100%);
+    background-image: -moz-linear-gradient(#4aa3df 0%, #258cd1 100%);
+    background-image: -o-linear-gradient(#4aa3df 0%, #258cd1 100%);
+    background-image: linear-gradient(#4aa3df 0%, #258cd1 100%);
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(52, 152, 219, 0.5) 0 0 5px;
+    -moz-box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(52, 152, 219, 0.5) 0 0 5px;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(52, 152, 219, 0.5) 0 0 5px;
+    -webkit-border-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -moz-background-clip: padding;
+    border-radius: 4px;
+    background-clip: padding-box;
+    color:#fff;
+}
+
+.signup-btn, .signin-btn{
+  background-color: #3498db;
+  background-image: -webkit-linear-gradient(#4aa3df 0%, #258cd1 100%);
+  background-image: -moz-linear-gradient(#4aa3df 0%, #258cd1 100%);
+  background-image: -o-linear-gradient(#4aa3df 0%, #258cd1 100%);
+  background-image: linear-gradient(#4aa3df 0%, #258cd1 100%);
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(52, 152, 219, 0.5) 0 0 5px;
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(52, 152, 219, 0.5) 0 0 5px;
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(52, 152, 219, 0.5) 0 0 5px;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  color:#fff;
+
+}
+
+input.signup-btn, input.signin-btn {color:#fff}
+
+.editbutton a, .deletebutton a{color:#fff; padding:0px 10px;}
+
+h2.ratings {
+    font-size: 13px !important;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+h2.reviews-by {
+    font-size: 13px !important;
+    color: black;
+    line-height: 8px;
+    letter-spacing: 0px;
+    font-style: italic;
+}
+
+.six.columns.commentresponses {
+    margin-left: 0px;
+    margin-right:1px;
+    padding:2px;
+    margin-bottom:20px;
+}
+
+.review-form {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+p.comments {
+    margin-bottom: 0px;
+}
+
+.individualone {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+
+#all-reviews-boxes h2 {
+    font-size: 22px;
+}
+
+
+h2.more-reviews {
+    text-align: Center;
+    font-size: 26px;
+    font-style: italic;
+    border-bottom: 1px solid #ccc;
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+#all-reviews-boxes {
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px 40px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+}
+
+form.signup-user, form.login-user {
+    max-width: 324px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+h2.logosize img {
+    max-width: 210px;
+    margin: 0 auto;
+    display: Block;
+}
+
+h2.logosize-main {
+    min-height: 110px;
+}
+h2.logosize-main img {
+    max-width: 160px;
+}

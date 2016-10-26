@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage Index</title>
+  </head>
+  <body>
+
+
+  <%- include ../partials/header-loggedout.ejs %>
+
+
+    <div class="hero">
+
+        <h1><span>Write us your reviews!</span><br></h1>
+        <h5>Online shopping sites such as qoo10, amazon,<br/> ebay, zalora.. and many others!</h5>
+
+        <div class="mouse">
+            <span></span>
+        </div>
+
+    </div>
+
+    <div class="row content">
+  
+<div class="row">
+        <ul id="all-shopping-boxes">
+          <% shopArr.forEach(function(shop) { %>
+            <div class="four columns">
+           <li>
+          <h2 class="logosize-main"> <img src="<%= shop.imagelink %>"> </h2>
+            <div class="established-date">  Since: <%= shop.establishedate %></div><br>
+            <div class="details">  <%= shop.details %></div><br>
+              Website: <%= shop.urlname %><br>
+                <%= shop.reviewid %><br>
+                  <a href="/shoppingsites/<%=shop.id%>"> <button id="read-reviews">Read Reviews</button></a>
+           </li>
+           </div>
+         <% }) %>
+     </ul>
+</div>
+
+  </body>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+</html>
