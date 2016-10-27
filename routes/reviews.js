@@ -20,17 +20,23 @@ router.get('/', function  (req, res) {
 
 
 router.get('/findit', function (req, res) {
+
+
+
   Review.find({postedBy: req.user.id}, function (err, foundallthereview) {
     if (err) console.log(err)
 
-    res.render('reviews/eachuser', {
-      foundallthereview: foundallthereview,
-      username : req.user.local.username
-    })
+      res.render('reviews/eachuser', {
+        foundallthereview: foundallthereview,
+        username : req.user.local.username
+      })
+
 
 
     //res.send(foundallthereview)
   })
+
+
 
 })
 

@@ -500,3 +500,7 @@ h2.logosize-main {
 h2.logosize-main img {
     max-width: 160px;
 }
+
+h2.review-image-logo img{
+  max-width: 100px;
+}

@@ -35,7 +35,7 @@ router.route('/signup')
         }));
 
 router.route('/signin')
-      .get(function (req, res) {
+      .get(authCheck, function (req, res) {
         res.render('signin/index', { message: req.flash('loginMessage') })
       })
       .post(passport.authenticate('local-login', {
@@ -43,6 +43,8 @@ router.route('/signin')
         failureRedirect: '/users/signin',
         failureFlash: true
       }))
+
+
 
 
 
@@ -161,12 +163,17 @@ function isLoggedIn(req, res, next) {
 
 //after loggin in, display the username
 
-router.get('/dashboard', isLoggedIn, function  (req, res, next) {
+router.get('/dashboard', isLoggedIn,  function  (req, res, next) {
     Shopping.find({}, function (err, shops) {
     res.render('profile/index', {message: req.flash('signupMsg'), username : req.user.local.username, shopArr:shops, authUser: req.user })
+
+
 })
 
 })
+
+
+
 
 router.get('/logout', function(req, res) {
         req.logout();
