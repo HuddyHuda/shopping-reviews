@@ -21,22 +21,19 @@ router.get('/', function  (req, res) {
 
 router.get('/findit', function (req, res) {
 
-
-
-  Review.find({postedBy: req.user.id}, function (err, foundallthereview) {
+  Review.find({postedBy: req.user.id}).populate('shopping_id')
+    .exec(function (err, foundshop) {
+      //res.send(reviews) function (err, foundallthereview) {
     if (err) console.log(err)
 
+
       res.render('reviews/eachuser', {
-        foundallthereview: foundallthereview,
+        foundshop: foundshop,
         username : req.user.local.username
-      })
 
-
-
-    //res.send(foundallthereview)
   })
 
-
+})
 
 })
 
