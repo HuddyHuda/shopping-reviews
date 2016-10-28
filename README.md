@@ -1,6 +1,7 @@
 # shopping-reviews
 
 <h1> About this application </h1>
+<a href="http://huda-shopping-reviews.herokuapp.com/">View site.</a>
 
 - There are 6 online shopping sites that users/non-user can read about. 
 
