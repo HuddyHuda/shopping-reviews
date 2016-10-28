@@ -11,8 +11,16 @@ would like to post comments.
 
 - Non-user can only read the reviews, so if they would like to contribute their comments.. they can sign up for an account.
 
+<h1>How i got the idea? </h1>
+- Totally no idea from the beginning so i thought i just ask my TA, kailin. And she said reviews! So that’s where the ideas start coming in... game reviews, restaurant reviews, food reviews, watches reviews, bags reviews, computer reviews, handphone model reviews.. So i thought since i like online shopping.. I  would just do reviews on online shopping sites.
+
+<h1> What are the problems faced </h1>
+- I was stuck at trying to display my first data from mongoDB for 3 hours. Even the simplest thing took me so long :( <br/>
+- User can edit or delete other user’s comments which they shouldn’t. <br/>
+- Trying to make the logo of the shopping site to appear along side with the reviews that is being commented for. <br/>
+
 <h1>Credits</h1>
-- Logo usage images for every shopping site is an external url from google which is harded coded inside the json file from the database.
+- Logo usage images for every shopping site is an external url from google which is harded coded inside the json file from the database. <br/>
 
 - Special thanks to kailin, prima, glen for all the assistance that I needed!! :)
 
